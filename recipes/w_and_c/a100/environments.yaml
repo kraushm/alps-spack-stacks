@@ -44,7 +44,7 @@ prgenv-nvidia:
   - netcdf-c@4.8.1%nvhpc
   - netcdf-fortran@4.5.4%nvhpc
   - hdf5@1.12.2%nvhpc +szip +hl +fortran +mpi
-  - openblas@0.3.21%nvhpc
+  - openblas@0.3.23%nvhpc
   - libfyaml@0.7.12%nvhpc
   # Explicitly concretise the packages below with gcc as they shouldn't be
   # built with nvhpc.
@@ -86,7 +86,7 @@ prgenv-gcc:
   specs:
   - cuda@11.8
   - osu-micro-benchmarks@5.9
-  - openblas@0.3.21
+  - openblas@0.3.23
   - libfyaml@0.7.12
   - hdf5@1.12.2 +fortran +threadsafe ~mpi
   - hdf5@1.12.2 +fortran +threadsafe +mpi
